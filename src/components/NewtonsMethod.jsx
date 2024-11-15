@@ -19,20 +19,18 @@ function NewtonsMethod() {
             if (Math.abs(fx) < 0.0000001 || Math.abs(newRoot - root) < 0.0000001) break;
 
             root = newRoot;
-        
+
         }
         setResult(`${root.toFixed(2)}`);
     }
-        return (
-            <form onSubmit={newtonsMethod}>
-                <section>
-                    <h2>Newtons Method</h2>
-                    <label>Root Guess: <input type="number" id="sideA" value={guess} onChange={(event) => setGuess(event.target.value)} required /></label>
-                    <label>Root Approximation (result): <input type="text" id="heronResult" disabled value={result} readOnly /></label>
-                    <button id="button3" type="submit">Calculate</button>
-                </section>
-            </form>
-        )
-    
+    return (
+        <form onSubmit={newtonsMethod}>
+            <h2>Newtons Method</h2>
+            <label>Root Guess: <input type="number" id="sideA" value={guess} onChange={(event) => setGuess(event.target.value)} required /></label>
+            <label>Root Approximation (result): <input type="text" id="heronResult" disabled value={result} readOnly /></label>
+            <button id="button3" type="submit">Calculate</button>
+        </form>
+    )
+
 }
 export default NewtonsMethod;

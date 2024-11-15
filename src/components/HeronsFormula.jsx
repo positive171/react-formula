@@ -27,14 +27,12 @@ function HeronsFormula() {
 
     return (
         <form onSubmit={heronsFormula}>
-            <section>
-                <h2>Heron's Formula</h2>
-                <label>Side a: <input type="number" id="sideA" value={a} onChange={(event) => setA(event.target.value)} required /></label>
-                <label>Side b: <input type="number" id="sideB" value={b} onChange={(event) => setB(event.target.value)} required /></label>
-                <label>Side c: <input type="number" id="sideC" value={c} onChange={(event) => setC(event.target.value)} required /></label>
-                <label>Area (result): <input type="text" id="heronResult" disabled value={result} readOnly /></label>
-                <button id="button1" type="submit">Calculate</button>
-            </section>
+            <h2>Heron's Formula</h2>
+            <label>Side a: <input type="number" id="sideA" value={a} onChange={(event) => setA(event.target.value)} required /></label>
+            <label>Side b: <input type="number" id="sideB" value={b} onChange={(event) => setB(event.target.value)} required /></label>
+            <label>Side c: <input type="number" id="sideC" value={c} onChange={(event) => setC(event.target.value)} required /></label>
+            <label>Area (result): <input type="text" id="heronResult" disabled value={result} readOnly /></label>
+            <button id="button1" type="submit">Calculate</button>
         </form>
     )
 }

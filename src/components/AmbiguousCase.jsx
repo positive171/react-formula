@@ -31,14 +31,13 @@ function AmbiguousCase() {
 
     return (
         <form onSubmit={ambiguousCase}>
-            <section>
-                <h2>Ambiguous Case</h2>
-                <label>Angle A: <input type="number" id="angleA" value={angleA} onChange={(event) => setAngleA(event.target.value)} required /></label>
-                <label>Side a: <input type="number" id="ambiguousSideA" value={a} onChange={(event) => setA(event.target.value)} required /></label>
-                <label>Side b: <input type="number" id="ambiguousSideB" value={b} onChange={(event) => setB(event.target.value)} required /></label>
-                <label>Triangle Type (result): <input type="text" id="ambiguousResult" disabled value={result} readOnly /></label>
-                <button id="button2" type="submit">Calculate</button>
-            </section>
+            <h2>Ambiguous Case</h2>
+            <label>Angle A: <input type="number" id="angleA" value={angleA} onChange={(event) => setAngleA(event.target.value)} required /></label>
+            <label>Side a: <input type="number" id="ambiguousSideA" value={a} onChange={(event) => setA(event.target.value)} required /></label>
+            <label>Side b: <input type="number" id="ambiguousSideB" value={b} onChange={(event) => setB(event.target.value)} required /></label>
+            <label>Triangle Type (result): <input type="text" id="ambiguousResult" disabled value={result} readOnly /></label>
+            <button id="button2" type="submit">Calculate</button>
+
         </form>
     )
 }
